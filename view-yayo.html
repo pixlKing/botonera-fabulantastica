@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script type="text/javascript" src="lib/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	    <meta name="viewport" content="user-scalable=no, width=device-width">
+	    <title>Categoría Yayo</title>
+	</head>
+	<body>
+
+		<div class="wrapper view-yayo">
+			<div class="col">
+				<h1>Yayo</h1>
+				
+				<div class="recursos">
+					<input class="input" id="src-audio" type="hidden" value="audios/silence.mp3" />						
+					<audio class="engine" id="eAudio"></audio>
+				</div>
+
+				<div class="controls clearfix">
+					<a class="item first" href="index.html"><img src="icons/home.svg" /></a>
+					<img class="item" src="icons/stop.svg" id="stop" onclick="stopAudio();" />
+					<img class="item last" src="icons/repeat.svg" id="repeat"  onclick="repeatAudio();" />
+				</div>
+				<div class="botonera">
+					<div class="btn" onclick="playAudio('yayo_chiste-gay')"><p><b>Chiste Gay</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_chiste-madre-e-hijo')"><p><b>Chiste madre e hijo</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_chiste-piropo')"><p><b>Chiste piropo</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_chiste-playa')"><p><b>Chiste Playa</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_chiste-pulover')"><p><b>Chiste Pullover</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_insulto-paciencia')"><p><b>Insulto Paciencia</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_insulto-pelos-concha')"><p><b>Insulto pelos</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_insulto-propuesta')"><p><b>Insulto Propuesta</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_insulto-viejas')"><p><b>Insulto Viejas</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_poesia-chocolate')"><p><b>Poesia Chocolate</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_poesia-geografia')"><p><b>Poesia Geografía</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_sopla-la-vela')"><p><b>Soplá La Vela!</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_te-voy-a-romper-el-orto')"><p><b>Te voy a romper el O...</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_chiste-caperucita')"><p><b>Chiste caperucita</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_chiste-colectivo')"><p><b>Chiste Colectivo</b></p></div>
+					<div class="btn" onclick="playAudio('yayo_chiste-cruzas')"><p><b>Chiste Cruzas</b></p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

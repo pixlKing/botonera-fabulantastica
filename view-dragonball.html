@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script type="text/javascript" src="lib/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	    <meta name="viewport" content="user-scalable=no, width=device-width">
+	    <title>Categoría DragonBall</title>
+	</head>
+	<body>
+
+		<div class="wrapper view-dragonball">
+			<div class="col">
+				<h1>Dragon Ball</h1>
+				
+				<div class="recursos">
+					<input class="input" id="src-audio" type="hidden" value="audios/silence.mp3" />						
+					<audio class="engine" id="eAudio"></audio>
+				</div>
+
+				<div class="controls clearfix">
+					<a class="item first" href="index.html"><img src="icons/home.svg" /></a>
+					<img class="item" src="icons/stop.svg" id="stop" onclick="stopAudio();" />
+					<img class="item last" src="icons/repeat.svg" id="repeat"  onclick="repeatAudio();" />
+				</div>
+				<div class="botonera">
+					<div class="btn" onclick="playAudio('dragonball_hamehameha')"><p><b>Kame Hame Ha!</b></p></div>
+					<div class="btn" onclick="playAudio('dragonball_insecto')"><p><b>Insecto!</b></p></div>
+					<div class="btn" onclick="playAudio('dragonball_lavense-la-cara')"><p><b>Lavense la cara</b></p></div>
+					<div class="btn" onclick="playAudio('dragonball_mas-de-8000')"><p><b>Es mas de 8000</b></p></div>
+					<div class="btn" onclick="playAudio('dragonball_mujer-vulgar')"><p><b>Que Mujer tan vulgar</b></p></div>
+					<div class="btn" onclick="playAudio('dragonball_no-tengo-que-contestar')"><p><b>No tengo porque contestar</b></p></div>
+					<div class="btn" onclick="playAudio('dragonball_piccoro-quedo-claro')"><p><b>Quedó claro?</b></p></div>
+					<div class="btn" onclick="playAudio('dragonball_super-kaioken')"><p><b>Kaioken</b></p></div>
+					<div class="btn" onclick="playAudio('dragonball_te-quedo-claro')"><p><b>Te quedó claro?</b></p></div>					
+					<div class="btn" onclick="playAudio('dragonball_despierten')"><p><b>Despierten!</b></p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script type="text/javascript" src="lib/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	    <meta name="viewport" content="user-scalable=no, width=device-width">
+	    <title>Categoría Simpsons</title>
+	</head>
+	<body>
+
+		<div class="wrapper view-simpsons">
+			<div class="col">
+				<h1>Los Simpsons</h1>
+				
+				<div class="recursos">
+					<input class="input" id="src-audio" type="hidden" value="audios/silence.mp3" />						
+					<audio class="engine" id="eAudio"></audio>
+				</div>
+
+				<div class="controls clearfix">
+					<a class="item first" href="index.html"><img src="icons/home.svg" /></a>
+					<img class="item" src="icons/stop.svg" id="stop" onclick="stopAudio();" />
+					<img class="item last" src="icons/repeat.svg" id="repeat"  onclick="repeatAudio();" />
+				</div>
+				<div class="botonera">					
+					<div class="btn" onclick="playAudio('simpsons_alf')"><p><b>Volvio ALF</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_borrate-flanders')"><p><b>Borrate Flanders!</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_nick-riviera')"><p><b>Nick Riviera</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_quiero-dormir')"><p><b>Quiero dormir</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_tirense-a-un-pozo')"><p><b>Tirense a un pozo!</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_bounyour-soquetes')"><p><b>Bonjourrr pedazo de soquetes</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_apoyo-la-mocion-con-violencia')"><p><b>Apoyo la mocion con violencia</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_barney-eructo')"><p><b>Barney eructo</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_cosme-fulanito')"><p><b>Cosme fulanito</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_cuca')"><p><b>Le puse Cuca</b></p></div>					
+					<div class="btn" onclick="playAudio('simpsons_el-coco')"><p><b>El coco esta en la casa</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_ensalada')"><p><b>No vives de ensalada</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_esclavo')"><p><b>Trabajo muy duro</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_esclavo-v2')"><p><b>Trabajo muy duro V2</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_gracias-por-venir-infierno')"><p><b>Gracias por venir</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_haha-nelson')"><p><b>Risa Nelson</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_inteligente-intelectual')"><p><b>Inteligente intelectual</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_jalea')"><p><b>La Jalea</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_lider-es-bueno')"><p><b>Lider es bueno</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_nananalider')"><p><b>Nananana lider</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_onda')"><p><b>La onda</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_pensar-en-los-ninos')"><p><b>Pensar en los niños</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_pequeno-demonio')"><p><b>Pequeño demonio</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_piensa-en-algo-feo')"><p><b>Piensa en algo feo</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_postre')"><p><b>El Postre postre</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_sistema-esta-mal')"><p><b>Sistema esta mal</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_soy-especial')"><p><b>Soy Espezial</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_todaviasirve')"><p><b>Todavia sirve</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_traigo-amor')"><p><b>Les traigo amor</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_traigo-miedo')"><p><b>Les traigo peste</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_parapantinti')"><p><b>Parapatin ti titin tiin</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_verdad')"><p><b>La Verdad!</b></p></div>
+					<div class="btn" onclick="playAudio('simpsons_el-golpe-scott-joplin')"><p><b>Homero en New York</b></p></div>					
+					<div class="btn lock"><p><b>Sonido bloqueado</b></p></div>
+					<div class="btn lock"><p><b>Sonido bloqueado</b></p></div>
+					<div class="btn unlock" onclick="playAudio('simpsons_alf')"><p><b>Sonido desbloqueado</b></p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

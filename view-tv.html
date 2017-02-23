@@ -1,0 +1,54 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script type="text/javascript" src="lib/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	    <meta name="viewport" content="user-scalable=no, width=device-width">
+	    <title>Categoría TV</title>
+	</head>
+	<body>
+
+		<div class="wrapper view-tv">
+			<div class="col">
+				<h1>Televisión</h1>
+				
+				<div class="recursos">
+					<input class="input" id="src-audio" type="hidden" value="audios/silence.mp3" />						
+					<audio class="engine" id="eAudio"></audio>
+				</div>
+
+				<div class="controls clearfix">
+					<a class="item first" href="index.html"><img src="icons/home.svg" /></a>
+					<img class="item" src="icons/stop.svg" id="stop" onclick="stopAudio();" />
+					<img class="item last" src="icons/repeat.svg" id="repeat"  onclick="repeatAudio();" />
+				</div>
+				<div class="botonera">
+					<div class="btn" onclick="playAudio('tv_capussoto-sali-concha')"><p><b>Salí Concha</b></p></div>
+					<div class="btn" onclick="playAudio('tv_casados-cafecitooo')"><p><b>Cafecitooo</b></p></div>
+					<div class="btn" onclick="playAudio('tv_casados-loca-mariaelena')"><p><b>Loca Marie Elena</b></p></div>
+					<div class="btn" onclick="playAudio('tv_franchela-si-es-una-nena')"><p><b>Si es una nena!</b></p></div>
+					<div class="btn" onclick="playAudio('tv_listorti-sopaaaa')"><p><b>Listorti Sopaaaa!</b></p></div>
+					<div class="btn" onclick="playAudio('tv_miki-soy-una-mierda-humana')"><p><b>Soy una mierda humana</b></p></div>
+					<div class="btn" onclick="playAudio('tv_miky_ignoremosla')"><p><b>Ignoremosla</b></p></div>
+					<div class="btn" onclick="playAudio('tv_mirtha_carajo-mierda')"><p><b>Carajo Mierda!</b></p></div>
+					<div class="btn" onclick="playAudio('tv_atendedor-boludos-atiendo-boludos')"><p><b>Atiendo Boludos</b></p></div>
+					<div class="btn" onclick="playAudio('tv_atendedor-boludos-quien-te-conoce')"><p><b>Quien te conoce</b></p></div>
+					<div class="btn" onclick="playAudio('tv_capussoto-celular2')"><p><b>Celular 2</b></p></div>					
+					<div class="btn" onclick="playAudio('tv_capussoto-denme-bola')"><p><b>Denme Bola</b></p></div>
+					<div class="btn" onclick="playAudio('tv_capussoto-habla-bien-hdp')"><p><b>Hablá bien HDP!</b></p></div>
+					<div class="btn" onclick="playAudio('tv_capussoto-largar-celular')"><p><b>Largar Celular</b></p></div>
+					<div class="btn" onclick="playAudio('tv_capussoto-mierda')"><p><b>Mierda</b></p></div>
+					<div class="btn" onclick="playAudio('tv_capussoto-pelotudo-en-ingles')"><p><b>Pelotudo en Ingles</b></p></div>
+					<div class="btn" onclick="playAudio('insultos_boludoo')"><p><b>Francella Boludoo</b></p></div>
+					<div class="btn" onclick="playAudio('tv_fort-basta-chicos')"><p><b>Fort: Basta Chicos</b></p></div>
+					<div class="btn" onclick="playAudio('tv_iorio-yuta-sorete')"><p><b>Iorio: Yuta Sorete</b></p></div>
+					<div class="btn" onclick="playAudio('tv_capussoto-saran')"><p><b>Saara, saara, saaran..</b></p></div>
+					<div class="btn" onclick="playAudio('tv_ooo-listorti')"><p><b>Listorti Ooo!</b></p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script type="text/javascript" src="lib/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	    <meta name="viewport" content="user-scalable=no, width=device-width">
+	    <title>Categoría Insultos</title>
+	</head>
+	<body>
+
+		<div class="wrapper view-insultos">
+			<div class="col">
+				<h1>Insultos</h1>
+				
+				<div class="recursos">
+					<input class="input" id="src-audio" type="hidden" value="audios/silence.mp3" />						
+					<audio class="engine" id="eAudio"></audio>
+				</div>
+
+				<div class="controls clearfix">
+					<a class="item first" href="index.html"><img src="icons/home.svg" /></a>
+					<img class="item" src="icons/stop.svg" id="stop" onclick="stopAudio();" />
+					<img class="item last" src="icons/repeat.svg" id="repeat"  onclick="repeatAudio();" />
+				</div>
+				<div class="botonera">
+					<div class="btn" onclick="playAudio('insultos_boludoo')"><p><b>Francella Boludoo</b></p></div>
+					<div class="btn" onclick="playAudio('insultos_capussoto-sali-pelotuda')"><p><b>Salí pelotuda!</b></p></div>
+					<div class="btn" onclick="playAudio('insultos_conchuda-infectada')"><p><b>Conchuda infectada</b></p></div>
+					<div class="btn" onclick="playAudio('insultos_pelotuda-matriculada')"><p><b>Pelotuda Matriculada</b></p></div>
+					<div class="btn" onclick="playAudio('insultos_tano-andate-a-cooon')"><p><b>Tano anda a la con.. de tu hna!</b></p></div>
+					<div class="btn" onclick="playAudio('insultos_tano-dale-boludo')"><p><b>Dale Boludo!</b></p></div>
+					<div class="btn" onclick="playAudio('insultos_tano-forro-hdmp')"><p><b>Dale, Hacete el Canchero</b></p></div>
+					<div class="btn" onclick="playAudio('insultos_tano-la-concha-de-tu-madre')"><p><b>Así la con.. de tu madre</b></p></div>
+					<div class="btn" onclick="playAudio('insultos_tano-la-puta-que-me-pario')"><p><b>La puta que me parió</b></p></div>					
+					<div class="btn" onclick="playAudio('insultos_tano-lpqtp-cantito')"><p><b>Lpqmp Cantito</b></p></div>
+					<div class="btn" onclick="playAudio('insultos_tano-lpqtp-negro-de-mierda')"><p><b>Negro de M...</b></p></div>					
+					<div class="btn" onclick="playAudio('insultos_tano-pendejo-pelotudo')"><p><b>Pendejo Pelotudo!</b></p></div>
+					<div class="btn" onclick="playAudio('insultos_tano-tarado-mental')"><p><b>Tarado Mental</b></p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script type="text/javascript" src="lib/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	    <meta name="viewport" content="user-scalable=no, width=device-width">
+	    <title>Categoría Politica</title>
+	</head>
+	<body>
+
+		<div class="wrapper view-politica">
+			<div class="col">
+				<h1>Política</h1>
+				
+				<div class="recursos">
+					<input class="input" id="src-audio" type="hidden" value="audios/silence.mp3" />						
+					<audio class="engine" id="eAudio"></audio>
+				</div>
+
+				<div class="controls clearfix">
+					<a class="item first" href="index.html"><img src="icons/home.svg" /></a>
+					<img class="item" src="icons/stop.svg" id="stop" onclick="stopAudio();" />
+					<img class="item last" src="icons/repeat.svg" id="repeat"  onclick="repeatAudio();" />
+				</div>
+				<div class="botonera">
+					<div class="btn" onclick="playAudio('politica_maduro-roban-como-nosotros')"><p><b>Roban como nosotros</b></p></div>
+					<div class="btn" onclick="playAudio('politica_menem-etratosfera')"><p><b>Se remontaran a la estratosfera</b></p></div>					
+					<div class="btn" onclick="playAudio('politica_cristina-corneta')"><p><b>Los de la Corneta!</b></p></div>
+					<div class="btn" onclick="playAudio('politica_cristina-diabetes')"><p><b>Diabetes</b></p></div>
+					<div class="btn" onclick="playAudio('politica_cristina-h20')"><p><b>El H2 cero el Agua</b></p></div>
+					<div class="btn" onclick="playAudio('politica_cristina-miedo-a-dios-y-a-mi')"><p><b>Miedo a Dios y a Mi</b></p></div>
+					<div class="btn" onclick="playAudio('politica_cristina-robar')"><p><b>Vamos a Robar Licitación</b></p></div>
+					<div class="btn" onclick="playAudio('politica_cristina-rodar-robar')"><p><b>Rodar o Robar?</b></p></div>
+					<div class="btn" onclick="playAudio('politica_cristina-silent-please')"><p><b>Silence Please</b></p></div>					
+					<div class="btn" onclick="playAudio('politica_evo-el-pollo-te-hace-gay')"><p><b>El pollo te hace gay</b></p></div>
+					<div class="btn" onclick="playAudio('politica_macri-wiwiwi')"><p><b>Macri wiwiwiwi Rock you!</b></p></div>
+					<div class="btn" onclick="playAudio('politica_maduro-cultivar-pollo')"><p><b>Cultivar Pollo</b></p></div>
+					<div class="btn" onclick="playAudio('politica_maduro-libros-y-libras')"><p><b>Libros y Libras</b></p></div>
+					<div class="btn" onclick="playAudio('politica_maduro-no-soy-bruto')"><p><b>Yo no soy Tan Bruto</b></p></div>
+					<div class="btn" onclick="playAudio('politica_maduro-penes')"><p><b>Cristo multiplicó los Penes</b></p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

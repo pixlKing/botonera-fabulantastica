@@ -1,0 +1,331 @@
+/********** VARIABLES **********/
+/**** RESOLUCIONES ****/
+$phone: 320px;
+$phablet: 500px;
+$mobile: 800px;
+$tablet: 1024px;
+$desktop: 1360px;
+$tv: 1920px;
+
+/**** COLORES ****/
+$bkgBody: #121213;
+
+$colorDefaultH1: #ED143D;
+$controlsBKG: #ED143D;
+
+$grisoscuro: #3E3D3D;
+$btnBKG: #696969;
+$btnBoxShadow: $grisoscuro;
+
+
+/** Variables de Colores de cada categoria **/
+/* Cine */
+$cineColor1: #E85CBC;
+$cineColor2: #912B71;
+/* Dragon ball */
+$dragonColor1: #DE721B;
+$dragonColor2: #D11903;
+/* Insultos */
+$insultosColor1: #ffffff;
+$insultosColor2: $grisoscuro;
+/* Juegos */
+$juegosColor1: #D40B0B;
+$juegosColor2: #D40B0B;
+/* Otros */
+$otrosColor1: #ffffff;
+$otrosColor2: #BABABA;
+/* Pibe */
+$pibeColor1: #D40B0B;
+$pibeColor2: #6C9FDD;
+/* Politica */
+$politicaColor1: #ffffff;
+$politicaColor2: #054AA2;
+/* Simpsons */
+$simpsonsColor1: #FED420;
+$simpsonsColor2: #ED5AA0;
+/* Southpark */
+$southColor1: #00CEED;
+$southColor2: #1099AE;
+/* Turn down for what */
+$turnColor1: #6C9FDD;
+$turnColor2: #34649E;
+/* TV */
+$tvColor1: #9254AB;
+$tvColor2: #552B68;
+/* Yayo */
+$yayoColor1: #F0FF00;
+$yayoColor2: #25994B;
+
+
+/*********** MIXINS ***********/
+/**** BOX-SHADOW ****/
+@mixin box-shadow($top, $left, $blur, $grosor, $color, $inset:"") {
+
+    box-shadow:$top $left $blur $grosor $color #{$inset};
+    -webkit-box-shadow:$top $left $blur $grosor $color #{$inset};
+    -moz-box-shadow:$top $left $blur $grosor $color #{$inset};
+    -ms-box-shadow:$top $left $blur $grosor $color #{$inset};
+    -o-box-shadow:$top $left $blur $grosor $color #{$inset};
+}
+/**** BORDER-RADIUS ****/
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+
+/***********/
+::selection {
+	background: none;
+}
+body {
+    background: $bkgBody;
+}
+h1 {
+    color: $colorDefaultH1;
+    font-size: 5vw;
+    margin: 0 0 2vw 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 {
+    color: white;
+    float: left;
+    width: 100%;
+}
+.wrapper {
+
+}
+.col {
+	padding: 2vw;	
+}
+.controls {
+    background: $controlsBKG;
+    margin: 0 -2vw;
+    padding: 2vw;
+    text-align: right;   
+    @include box-shadow(inset, 0, 2px, 4px, 0, rgba(0,0,0,0.2));
+
+    .item {
+        cursor: pointer;
+        display: inline-block;
+        width: 14%;
+
+        &:active {
+            opacity: .5;
+        }
+
+        &.first {
+            float: left;
+        }
+        &.last {
+            margin-left: 2%;
+        }
+    }
+}
+/* Contenedor de los botones */
+.botonera {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+}
+/* boton default */
+.btn {
+    background-color: $btnBKG;
+    color: white;
+    cursor: pointer;
+    float: left;
+    //font-size: 3vw;
+    height: 13vw;
+    margin: 3vw 3% 1vw 0;
+    padding: 0;
+    position: relative;    
+    text-align: center;
+    width: 22.7%;
+    @include border-radius(6px);
+    @include box-shadow(0, 1.5vw, 0, 0, $btnBoxShadow);
+
+    @media ( max-width: $phone ){
+        font-size: 11px;
+    }
+    @media screen and (min-width: $phone) and ( max-width: $phablet ){
+        font-size: 12px;
+    }
+    @media screen and (min-width: $phablet) and ( max-width: $mobile ){
+        font-size: 16px;
+    }
+    @media screen and (min-width: $mobile) and ( max-width: $tablet ){
+        font-size: 20px;
+    }
+    @media (min-width: $tablet + 1px) {
+        font-size: 25px;
+    }
+
+    &:nth-child(4n+4) {
+        margin-right: 0;
+    }
+    p {
+        display: table;
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+    b {
+        display: table-cell;
+        font-weight: normal;
+        vertical-align: middle;
+    }
+    &:after {
+        background: url('../icons/pause.svg') center center no-repeat;
+        background-size: contain;
+        content: '';
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        opacity: 0;
+        margin: 8px;
+        transition: opacity .3s;
+    }
+    &:active {
+        position: relative;    
+        top: 0.5vw;
+        @include box-shadow(0, 1vw, 0, 0, $btnBoxShadow);
+    }
+
+    /* estado activo */
+    &.active {
+        color: transparent;
+
+        &:after {
+            opacity: 1;
+        }
+    }
+
+    /** Boton blockeado / pago **/
+    &.lock {
+        color: silver;
+
+        &:after { 
+            background-image: url('../icons/lock.svg');
+            opacity: 0.5;
+        }
+    }
+
+    /** Boton DESblockeado / comprado **/
+    &.unlock {
+        &:before {
+            background: url('../icons/unlock.svg') center center no-repeat;
+            content: '';
+            position: absolute;
+            background-size: contain;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.3;
+            transition: opacity .3s;
+            margin: 8px;
+        }
+    }
+}
+
+
+/********** INDEX *********/
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+.logo {
+    padding: 20px;
+    box-sizing: border-box;
+}
+/********** VIEW **********/
+.view {
+
+    .item {
+        cursor: pointer;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        width: 33.3%;
+
+        img {
+            float: left;
+            width: 100%;
+        }
+        .area-active {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+        }
+
+        /* Active */    
+        &:active {
+            .area-active {
+                box-shadow: inset 2px 3px 20px 0px rgba(0,0,0,0.5);
+            }
+        }
+    }
+}
+
+
+/** Colores de cada categoria **/
+/* Cine */
+.view-cine h1{color: $cineColor1;}
+.view-cine .controls{background-color: $cineColor2;}
+
+/* Dragon ball */
+.view-dragonball h1{color: $dragonColor1;}
+.view-dragonball .controls{background-color: $dragonColor2;}
+
+/* Insultos */
+.view-insultos h1{color: $insultosColor1;}
+.view-insultos .controls{background-color: $insultosColor2;}
+
+/* Juegos */
+.view-juegos h1{color: $juegosColor1;}
+.view-juegos .controls{background-color: $juegosColor2;}
+
+/* Otros */
+.view-otros h1{color: $otrosColor1;}
+.view-otros .controls{background-color: $otrosColor2;}
+
+/* Pibe */
+.view-pibe h1{color: $pibeColor1;}
+.view-pibe .controls{background-color: $pibeColor2;}
+
+/* Politica */
+.view-politica h1{color: $politicaColor1; }
+.view-politica .controls{background-color: $politicaColor2;}
+
+/* Simpsons */
+.view-simpsons h1{color: $simpsonsColor1;}
+.view-simpsons .controls{background-color: $simpsonsColor2;}
+
+/* Southpark */
+.view-southpark h1{color: $southColor1;}
+.view-southpark .controls{background-color: $southColor2;}
+
+/* Turn down for what */
+.view-turn-down h1{color: $turnColor1;}
+.view-turn-down .controls{background-color: $turnColor2;}
+
+/* TV */
+.view-tv h1{color: $tvColor1;}
+.view-tv .controls{background-color: $tvColor2; }
+
+/* Yayo */
+.view-yayo h1{color: $yayoColor1;}
+.view-yayo .controls{background-color: $yayoColor2;}
+
+
+
+

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script type="text/javascript" src="lib/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	    <meta name="viewport" content="user-scalable=no, width=device-width">
+	    <title>Categoría SouthPark</title>
+	</head>
+	<body>
+
+		<div class="wrapper view-southpark">
+			<div class="col">
+				<h1>South Park</h1>
+				
+				<div class="recursos">
+					<input class="input" id="src-audio" type="hidden" value="audios/silence.mp3" />						
+					<audio class="engine" id="eAudio"></audio>
+				</div>
+
+				<div class="controls clearfix">
+					<a class="item first" href="index.html"><img src="icons/home.svg" /></a>
+					<img class="item" src="icons/stop.svg" id="stop" onclick="stopAudio();" />
+					<img class="item last" src="icons/repeat.svg" id="repeat"  onclick="repeatAudio();" />
+				</div>
+				<div class="botonera">
+					<div class="btn" onclick="playAudio('sourthpark_carajo-ninfomanas')"><p><b>Carajo Ninfomanas</b></p></div>
+					<div class="btn" onclick="playAudio('southpark_amigo-deforme')"><p><b>Amigo deforme</b></p></div>
+					<div class="btn" onclick="playAudio('southpark_asco')"><p><b>Asco</b></p></div>
+					<div class="btn" onclick="playAudio('southpark_estupido-judio')"><p><b>Estupido judio</b></p></div>
+					<div class="btn" onclick="playAudio('southpark_jodeteputa')"><p><b>Jodete puta</b></p></div>
+					<div class="btn" onclick="playAudio('southpark_mato-a-kenny')"><p><b>Mató a Kenny</b></p></div>
+					<div class="btn" onclick="playAudio('southpark_te-mato')"><p><b>Te mato</b></p></div>
+					<div class="btn" onclick="playAudio('southpark_vayanse-al-carajo-yo-me-voy')"><p><b>Vayanse al carajo yo me voy</b></p></div>
+					<div class="btn" onclick="playAudio('southpark_hdp')"><p><b>Hijo de Puta</b></p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

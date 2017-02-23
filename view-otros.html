@@ -1,0 +1,42 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script type="text/javascript" src="lib/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	    <meta name="viewport" content="user-scalable=no, width=device-width">
+	    <title>Categoría Otros</title>
+	</head>
+	<body>
+
+		<div class="wrapper view-otros">
+			<div class="col">
+				<h1>Otros</h1>
+				
+				<div class="recursos">
+					<input class="input" id="src-audio" type="hidden" value="audios/silence.mp3" />						
+					<audio class="engine" id="eAudio"></audio>
+				</div>
+
+				<div class="controls clearfix">
+					<a class="item first" href="index.html"><img src="icons/home.svg" /></a>
+					<img class="item" src="icons/stop.svg" id="stop" onclick="stopAudio();" />
+					<img class="item last" src="icons/repeat.svg" id="repeat"  onclick="repeatAudio();" />
+				</div>
+				<div class="botonera">
+					<div class="btn" onclick="playAudio('otros_charanchan')"><p><b>Charan chan</b></p></div>
+					<div class="btn" onclick="playAudio('otros_tano-no')"><p><b>Tano Pasman Noooo!</b></p></div>
+					<div class="btn" onclick="playAudio('otros_abucheo')"><p><b>Abucheo</b></p></div>
+					<div class="btn" onclick="playAudio('otros_aplausos')"><p><b>Aplausos</b></p></div>
+					<div class="btn" onclick="playAudio('otros_avast')"><p><b>La base de datos ha sido actualizada</b></p></div>
+					<div class="btn" onclick="playAudio('otros_ban-dam-tss')"><p><b>Final de chiste</b></p></div>
+					<div class="btn" onclick="playAudio('otros_burla')"><p><b>Chiste malo sonido</b></p></div>
+					<div class="btn" onclick="playAudio('otros_chan')"><p><b>Chan!</b></p></div>
+					<div class="btn" onclick="playAudio('otros_Tantantan')"><p><b>Chaaaan x 4!!!</b></p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

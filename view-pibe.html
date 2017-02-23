@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script type="text/javascript" src="lib/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	    <meta name="viewport" content="user-scalable=no, width=device-width">
+	    <title>Categoría Pibe Bastanete</title>
+	</head>
+	<body>
+
+		<div class="wrapper view-pibe">
+			<div class="col">
+				<h1>El Niño Artista</h1>
+				
+				<div class="recursos">
+					<input class="input" id="src-audio" type="hidden" value="audios/silence.mp3" />						
+					<audio class="engine" id="eAudio"></audio>
+				</div>
+
+				<div class="controls clearfix">
+					<a class="item first" href="index.html"><img src="icons/home.svg" /></a>
+					<img class="item" src="icons/stop.svg" id="stop" onclick="stopAudio();" />
+					<img class="item last" src="icons/repeat.svg" id="repeat"  onclick="repeatAudio();" />
+				</div>
+				<div class="botonera">
+					<div class="btn" onclick="playAudio('arte_armo-cosas')"><p><b>Armo cosas</b></p></div>
+					<div class="btn" onclick="playAudio('arte_avion')"><p><b>Hice un Avión</b></p></div>
+					<div class="btn" onclick="playAudio('arte_bastanete')"><p><b>Bastanete</b></p></div>
+					<div class="btn" onclick="playAudio('arte_gracias')"><p><b>Quiero dar las Gracias</b></p></div>
+					<div class="btn" onclick="playAudio('arte_humor')"><p><b>El Humor</b></p></div>
+					<div class="btn" onclick="playAudio('arte_juguetes')"><p><b>Juguetes</b></p></div>
+					<div class="btn" onclick="playAudio('arte_liniers')"><p><b>Linierrrrs</b></p></div>
+					<div class="btn" onclick="playAudio('arte_me-gusta-el-artee')"><p><b>Me Gusta el Arte</b></p></div>
+					<div class="btn" onclick="playAudio('arte_me-gusta-la-literatura')"><p><b>Me gusta la literatura</b></p></div>
+					<div class="btn" onclick="playAudio('arte_me-gusta-leer')"><p><b>Me gusta leer</b></p></div>
+					<div class="btn" onclick="playAudio('arte_no-lo-se')"><p><b>No lo se</b></p></div>
+					<div class="btn" onclick="playAudio('arte_voy-a-esperar')"><p><b>Voy a Esperar</b></p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

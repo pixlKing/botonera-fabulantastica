@@ -1,0 +1,57 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script type="text/javascript" src="lib/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	    <meta name="viewport" content="user-scalable=no, width=device-width">
+	    <title>Categoría Cine</title>
+	</head>
+	<body>
+
+		<div class="wrapper view-cine">
+			<div class="col">
+				<h1>Cine</h1>
+				
+				<div class="recursos">
+					<input class="input" id="src-audio" type="hidden" value="audios/silence.mp3" />						
+					<audio class="engine" id="eAudio"></audio>
+				</div>
+
+				<div class="controls clearfix">
+					<a class="item first" href="index.html"><img src="icons/home.svg" /></a>
+					<img class="item" src="icons/stop.svg" id="stop" onclick="stopAudio();" />
+					<img class="item last" src="icons/repeat.svg" id="repeat"  onclick="repeatAudio();" />
+				</div>
+				<div class="botonera">
+					<div class="btn" onclick="playAudio('cine_al-infinito-y-mas-alla')"><p><b>Al Infinito y mas allá</b></p></div>
+					<div class="btn" onclick="playAudio('cine_aqui-esta-jonny')"><p><b>Aquí está Johny</b></p></div>
+					<div class="btn" onclick="playAudio('cine_carroza-minusvalida-mental')"><p><b>Minusvalida Mental</b></p></div>
+					<div class="btn" onclick="playAudio('cine_carroza-ravioles')"><p><b>Yo hago ravioles ella hace ravioles</b></p></div>
+					<div class="btn" onclick="playAudio('cine_dar-la-espalda-al-mundo')"><p><b>Dar la espalda al mundo</b></p></div>
+					<div class="btn" onclick="playAudio('cine_eres-gallina')"><p><b>Eres un Gallina</b></p></div>
+					<div class="btn" onclick="playAudio('cine_grabalo-todo')"><p><b>Grabalo todo por tu puta madre</b></p></div>
+					<div class="btn" onclick="playAudio('cine_grito')"><p><b>Grito Wilhelm!</b></p></div>
+					<div class="btn" onclick="playAudio('cine_hakuna-matata')"><p><b>Hakuna Matata</b></p></div>
+					<div class="btn" onclick="playAudio('cine_james-bond')"><p><b>James Bond</b></p></div>
+					<div class="btn" onclick="playAudio('cine_le-llenaron-la-cocina-de-humo')"><p><b>Le llenaron la Cocina de Humo</b></p></div>
+					<div class="btn" onclick="playAudio('cine_que-la-fuerza-te-acompane')"><p><b>Que la fuerza te acompañe</b></p></div>
+					<div class="btn" onclick="playAudio('cine_quieras-o-no')"><p><b>QUIERAS O NO!</b></p></div>
+					<div class="btn" onclick="playAudio('cine_soy-el-rey-del-mundo')"><p><b>Soy el rey del mundo</b></p></div>
+					<div class="btn" onclick="playAudio('cine_ten-miedo')"><p><b>Ten Miedo</b></p></div>
+					<div class="btn" onclick="playAudio('cine_terminator-hasta-la-vista-baby')"><p><b>Hasta la vista Baby</b></p></div>
+					<div class="btn" onclick="playAudio('cine_terminator-ill-back')"><p><b>I'll Be Back!</b></p></div>
+					<div class="btn" onclick="playAudio('cine_veo-gente-muerta')"><p><b>Veo Gente Muerta</b></p></div>
+					<div class="btn" onclick="playAudio('cine_ya-estan-aqui')"><p><b>Ya estan aquí</b></p></div>
+					<div class="btn" onclick="playAudio('cine_starswars-yo-soy-tu-padre')"><p><b>Yo Soy Tu Padreee!</b></p></div>
+					<div class="btn" onclick="playAudio('cine_psicosis')"><p><b>Psicosis</b></p></div>
+					<div class="btn" onclick="playAudio('cine_sinsajo')"><p><b>Sinsajo Silvido</b></p></div>
+					<div class="btn" onclick="playAudio('cine_tiburon')"><p><b>Tiburón Música</b></p></div>
+					<div class="btn" onclick="playAudio('cine_this-is-sparta')"><p><b>This is Sparta!!</b></p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<script type="text/javascript" src="lib/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	    <meta name="viewport" content="user-scalable=no, width=device-width">
+	    <title>Categoría Juegos</title>
+	</head>
+	<body>
+
+		<div class="wrapper view-juegos">
+			<div class="col">
+				<h1>Juegos</h1>
+				
+				<div class="recursos">
+					<input class="input" id="src-audio" type="hidden" value="audios/silence.mp3" />						
+					<audio class="engine" id="eAudio"></audio>
+				</div>
+
+				<div class="controls clearfix">
+					<a class="item first" href="index.html"><img src="icons/home.svg" /></a>
+					<img class="item" src="icons/stop.svg" id="stop" onclick="stopAudio();" />
+					<img class="item last" src="icons/repeat.svg" id="repeat"  onclick="repeatAudio();" />
+				</div>
+				<div class="botonera">
+					<div class="btn" onclick="playAudio('juegos_finalfantasy-victory')"><p><b>FF Victory</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_kombat-fatality')"><p><b>Fatality</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_kombat-finish-her')"><p><b>Finish Her</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_kombat-finish-him')"><p><b>Finish Him</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_mario-coin')"><p><b>Mario Coin</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_mario-dead')"><p><b>Mario Dead</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_mario-gameovermusic')"><p><b>Mario Game over</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_mario-hurry')"><p><b>Mario Hurry up</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_mario-level')"><p><b>Mario Level</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_mario-up')"><p><b>Mario Live</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_metalsolidexclamation')"><p><b>Metal Gear !!!</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_pacman-dead')"><p><b>Pacman Dead</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_pacman-waka')"><p><b>Pacman Waka</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_pokemon-care')"><p><b>Pokemon Care</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_sonic-ahogandose')"><p><b>Sonic Ahogandose</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_street-fighter-hadoken')"><p><b>Street Fighter Hadoken</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_zelda-hey-listen')"><p><b>Zelda Hey Listen</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_zelda-item')"><p><b>Zelda Item</b></p></div>
+					<div class="btn" onclick="playAudio('juegos_wololo')"><p><b>Wololoooo</b></p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
