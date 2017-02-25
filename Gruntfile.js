@@ -7,13 +7,13 @@ module.exports = function(grunt) {
         compass: {
             dev: {
                 options: {
-                    sassDir: 'scss/',
+                    sassDir: 'source/sass/',
                     cssDir: 'css/'
                 }
             }
         },
         watch: {
-            files: ['scss/*'],
+            files: ['source/sass/*'],
             tasks: ['compass:dev'],
         },
 
