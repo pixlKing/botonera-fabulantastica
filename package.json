@@ -1,0 +1,25 @@
+{
+  "name": "botonera-fabulantastica",
+  "version": "1.0.0",
+  "description": "La botonera de tus sueños!",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixlKing/botonera-fabulantastica.git"
+  },
+  "author": "Matias Campagna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pixlKing/botonera-fabulantastica/issues"
+  },
+  "homepage": "https://github.com/pixlKing/botonera-fabulantastica#readme"
+}

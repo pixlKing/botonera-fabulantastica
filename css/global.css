@@ -1,3 +1,444 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 9, ../scss/_reset.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../scss/_reset.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, ../scss/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, ../scss/_reset.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, ../scss/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 77, ../scss/_reset.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 82, ../scss/_reset.scss */
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 94, ../scss/_reset.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 103, ../scss/_reset.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 115, ../scss/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 123, ../scss/_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 132, ../scss/_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 141, ../scss/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 150, ../scss/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 159, ../scss/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 167, ../scss/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 175, ../scss/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 179, ../scss/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 190, ../scss/_reset.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 198, ../scss/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 209, ../scss/_reset.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 217, ../scss/_reset.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 226, ../scss/_reset.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 234, ../scss/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 257, ../scss/_reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 271, ../scss/_reset.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 282, ../scss/_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 295, ../scss/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 307, ../scss/_reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 316, ../scss/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 327, ../scss/_reset.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 339, ../scss/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 351, ../scss/_reset.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 361, ../scss/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 372, ../scss/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 381, ../scss/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 392, ../scss/_reset.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 401, ../scss/_reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 410, ../scss/_reset.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 421, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 426, ../scss/_reset.scss */
+td,
+th {
+  padding: 0;
+}
+
 /********** VARIABLES **********/
 /**** RESOLUCIONES ****/
 /**** COLORES ****/
@@ -18,14 +459,17 @@
 /**** BOX-SHADOW ****/
 /**** BORDER-RADIUS ****/
 /***********/
+/* line 84, ../scss/global.scss */
 ::selection {
   background: none;
 }
 
+/* line 87, ../scss/global.scss */
 body {
   background: #121213;
 }
 
+/* line 90, ../scss/global.scss */
 h1 {
   color: #ED143D;
   font-size: 5vw;
@@ -34,16 +478,19 @@ h1 {
   text-transform: uppercase;
 }
 
+/* line 97, ../scss/global.scss */
 h2 {
   color: white;
   float: left;
   width: 100%;
 }
 
+/* line 105, ../scss/global.scss */
 .col {
   padding: 2vw;
 }
 
+/* line 108, ../scss/global.scss */
 .controls {
   background: #ED143D;
   margin: 0 -2vw;
@@ -55,22 +502,27 @@ h2 {
   -ms-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   -o-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
+/* line 115, ../scss/global.scss */
 .controls .item {
   cursor: pointer;
   display: inline-block;
   width: 14%;
 }
+/* line 120, ../scss/global.scss */
 .controls .item:active {
   opacity: .5;
 }
+/* line 124, ../scss/global.scss */
 .controls .item.first {
   float: left;
 }
+/* line 127, ../scss/global.scss */
 .controls .item.last {
   margin-left: 2%;
 }
 
 /* Contenedor de los botones */
+/* line 133, ../scss/global.scss */
 .botonera {
   display: inline-block;
   margin: 0 auto;
@@ -78,6 +530,7 @@ h2 {
 }
 
 /* boton default */
+/* line 139, ../scss/global.scss */
 .btn {
   background-color: #696969;
   color: white;
@@ -104,44 +557,53 @@ h2 {
   /** Boton DESblockeado / comprado **/
 }
 @media (max-width: 320px) {
+  /* line 139, ../scss/global.scss */
   .btn {
     font-size: 11px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 500px) {
+  /* line 139, ../scss/global.scss */
   .btn {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 800px) {
+  /* line 139, ../scss/global.scss */
   .btn {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1024px) {
+  /* line 139, ../scss/global.scss */
   .btn {
     font-size: 20px;
   }
 }
 @media (min-width: 1025px) {
+  /* line 139, ../scss/global.scss */
   .btn {
     font-size: 25px;
   }
 }
+/* line 170, ../scss/global.scss */
 .btn:nth-child(4n+4) {
   margin-right: 0;
 }
+/* line 173, ../scss/global.scss */
 .btn p {
   display: table;
   height: 100%;
   margin: 0;
   width: 100%;
 }
+/* line 179, ../scss/global.scss */
 .btn b {
   display: table-cell;
   font-weight: normal;
   vertical-align: middle;
 }
+/* line 184, ../scss/global.scss */
 .btn:after {
   background: url("../icons/pause.svg") center center no-repeat;
   background-size: contain;
@@ -155,6 +617,7 @@ h2 {
   margin: 8px;
   transition: opacity .3s;
 }
+/* line 197, ../scss/global.scss */
 .btn:active {
   position: relative;
   top: 0.5vw;
@@ -164,19 +627,24 @@ h2 {
   -ms-box-shadow: 0 1vw 0 0 #3E3D3D ;
   -o-box-shadow: 0 1vw 0 0 #3E3D3D ;
 }
+/* line 204, ../scss/global.scss */
 .btn.active {
   color: transparent;
 }
+/* line 207, ../scss/global.scss */
 .btn.active:after {
   opacity: 1;
 }
+/* line 213, ../scss/global.scss */
 .btn.lock {
   color: silver;
 }
+/* line 216, ../scss/global.scss */
 .btn.lock:after {
   background-image: url("../icons/lock.svg");
   opacity: 0.5;
 }
+/* line 224, ../scss/global.scss */
 .btn.unlock:before {
   background: url("../icons/unlock.svg") center center no-repeat;
   content: '';
@@ -192,17 +660,20 @@ h2 {
 }
 
 /********** INDEX *********/
+/* line 242, ../scss/global.scss */
 img {
   display: inline-block;
   max-width: 100%;
 }
 
+/* line 246, ../scss/global.scss */
 .logo {
   padding: 20px;
   box-sizing: border-box;
 }
 
 /********** VIEW **********/
+/* line 253, ../scss/global.scss */
 .view .item {
   cursor: pointer;
   float: left;
@@ -211,10 +682,12 @@ img {
   width: 33.3%;
   /* Active */
 }
+/* line 260, ../scss/global.scss */
 .view .item img {
   float: left;
   width: 100%;
 }
+/* line 264, ../scss/global.scss */
 .view .item .area-active {
   position: absolute;
   top: 0;
@@ -223,117 +696,140 @@ img {
   bottom: 0;
   pointer-events: none;
 }
+/* line 275, ../scss/global.scss */
 .view .item:active .area-active {
   box-shadow: inset 2px 3px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 /** Colores de cada categoria **/
 /* Cine */
+/* line 285, ../scss/global.scss */
 .view-cine h1 {
   color: #E85CBC;
 }
 
+/* line 286, ../scss/global.scss */
 .view-cine .controls {
   background-color: #912B71;
 }
 
 /* Dragon ball */
+/* line 289, ../scss/global.scss */
 .view-dragonball h1 {
   color: #DE721B;
 }
 
+/* line 290, ../scss/global.scss */
 .view-dragonball .controls {
   background-color: #D11903;
 }
 
 /* Insultos */
+/* line 293, ../scss/global.scss */
 .view-insultos h1 {
   color: #ffffff;
 }
 
+/* line 294, ../scss/global.scss */
 .view-insultos .controls {
   background-color: #3E3D3D;
 }
 
 /* Juegos */
+/* line 297, ../scss/global.scss */
 .view-juegos h1 {
   color: #D40B0B;
 }
 
+/* line 298, ../scss/global.scss */
 .view-juegos .controls {
   background-color: #D40B0B;
 }
 
 /* Otros */
+/* line 301, ../scss/global.scss */
 .view-otros h1 {
   color: #ffffff;
 }
 
+/* line 302, ../scss/global.scss */
 .view-otros .controls {
   background-color: #BABABA;
 }
 
 /* Pibe */
+/* line 305, ../scss/global.scss */
 .view-pibe h1 {
   color: #D40B0B;
 }
 
+/* line 306, ../scss/global.scss */
 .view-pibe .controls {
   background-color: #6C9FDD;
 }
 
 /* Politica */
+/* line 309, ../scss/global.scss */
 .view-politica h1 {
   color: #ffffff;
 }
 
+/* line 310, ../scss/global.scss */
 .view-politica .controls {
   background-color: #054AA2;
 }
 
 /* Simpsons */
+/* line 313, ../scss/global.scss */
 .view-simpsons h1 {
   color: #FED420;
 }
 
+/* line 314, ../scss/global.scss */
 .view-simpsons .controls {
   background-color: #ED5AA0;
 }
 
 /* Southpark */
+/* line 317, ../scss/global.scss */
 .view-southpark h1 {
   color: #00CEED;
 }
 
+/* line 318, ../scss/global.scss */
 .view-southpark .controls {
   background-color: #1099AE;
 }
 
 /* Turn down for what */
+/* line 321, ../scss/global.scss */
 .view-turn-down h1 {
   color: #6C9FDD;
 }
 
+/* line 322, ../scss/global.scss */
 .view-turn-down .controls {
   background-color: #34649E;
 }
 
 /* TV */
+/* line 325, ../scss/global.scss */
 .view-tv h1 {
   color: #9254AB;
 }
 
+/* line 326, ../scss/global.scss */
 .view-tv .controls {
   background-color: #552B68;
 }
 
 /* Yayo */
+/* line 329, ../scss/global.scss */
 .view-yayo h1 {
   color: #F0FF00;
 }
 
+/* line 330, ../scss/global.scss */
 .view-yayo .controls {
   background-color: #25994B;
 }
-
-/*# sourceMappingURL=global.css.map */

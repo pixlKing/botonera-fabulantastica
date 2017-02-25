@@ -1,3 +1,6 @@
+@import './reset';
+
+
 /********** VARIABLES **********/
 /**** RESOLUCIONES ****/
 $phone: 320px;
@@ -100,13 +103,13 @@ h2 {
 
 }
 .col {
-	padding: 2vw;	
+	padding: 2vw;
 }
 .controls {
     background: $controlsBKG;
     margin: 0 -2vw;
     padding: 2vw;
-    text-align: right;   
+    text-align: right;
     @include box-shadow(inset, 0, 2px, 4px, 0, rgba(0,0,0,0.2));
 
     .item {
@@ -142,7 +145,7 @@ h2 {
     height: 13vw;
     margin: 3vw 3% 1vw 0;
     padding: 0;
-    position: relative;    
+    position: relative;
     text-align: center;
     width: 22.7%;
     @include border-radius(6px);
@@ -192,7 +195,7 @@ h2 {
         transition: opacity .3s;
     }
     &:active {
-        position: relative;    
+        position: relative;
         top: 0.5vw;
         @include box-shadow(0, 1vw, 0, 0, $btnBoxShadow);
     }
@@ -210,7 +213,7 @@ h2 {
     &.lock {
         color: silver;
 
-        &:after { 
+        &:after {
             background-image: url('../icons/lock.svg');
             opacity: 0.5;
         }
@@ -267,7 +270,7 @@ img {
             pointer-events: none;
         }
 
-        /* Active */    
+        /* Active */
         &:active {
             .area-active {
                 box-shadow: inset 2px 3px 20px 0px rgba(0,0,0,0.5);
